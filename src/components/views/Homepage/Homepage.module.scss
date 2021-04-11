@@ -1,0 +1,52 @@
+@import '../../../styles/settings.scss';
+
+  .root {
+    height: auto;
+    background-color: $first;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    section {
+      width: 80%;
+      height: 100vh;
+      padding: 4rem 4rem 0 4rem;
+      margin-bottom: 10px;
+    }
+    .one {
+      display: flex;
+        img {
+          height: 100%;
+          width: 50%;
+          object-fit: cover;
+          margin-right: 30px;
+        }
+        .side_content {
+          display: flex;
+          align-items: stretch;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          h1 {
+            position: relative;
+            font-size: 3.5rem;
+            color: $second;
+            font-family: $decorative-text;
+            margin: 20px;
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -5px;
+              left: -60px;
+              height: 3px;
+              width: 300px;
+              background-color: $second;
+            }
+          }
+          p {
+            margin: 50px;
+          }
+        }
+
+    }    
+}

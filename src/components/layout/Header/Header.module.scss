@@ -1,0 +1,74 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    position: relative;
+    height: 100vh;
+    background-image: url("../../../images/pexels-jonathan-borba-3014859.jpg");
+    background-size: cover;
+    padding: 2rem 5rem;
+    span {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        background-color: $second;
+    }
+    .menu {
+        position: absolute;
+        right: 2rem;
+        color: $first;
+        display: flex;
+        list-style-type: none;
+        animation: move-left 1.5s ease-out;
+        li {
+            margin: 0 25px;
+            font-size: 2.5rem;
+            font-family: $decorative-text;
+            text-shadow: 1px 1px black;
+            transition: 0.5s ease-out;
+            z-index: 20;
+            padding: 0 10px;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 1px 1px 1px 1px $fourth;
+            }
+            a {
+              cursor: pointer;
+            }
+        }
+    }
+    .btn_main {
+        position: absolute;
+        top: 80%;
+        left: 42%;
+        height: 70px;
+        width: 280px;
+        padding: auto 40px;
+        font-size: 1.8rem;
+        color: $first;
+        background: transparent;
+        border: 2px solid $first;
+        cursor: pointer;
+        font-family: $normal-text;
+        transition: 0.5s ease-out;
+        opacity: 0;
+        animation: appear 1.5s ease-out 1.8s forwards;
+        outline: none;
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+}
+
+@keyframes move-left {
+    from {transform: translateX(-50%); opacity: 0.5;}
+    to {trnsform: translateX(100%); opacity: 1;}
+}
+
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
