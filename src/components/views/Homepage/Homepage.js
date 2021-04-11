@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Button} from '../../common/Button/Button';
+import { Link } from 'react-router-dom';
 
 import styles from './Homepage.module.scss';
-import clsx from  'clsx';
-
+import cslx from 'clsx';
 
 const Component = () => (
   <div className={styles.root}>
@@ -16,11 +16,55 @@ const Component = () => (
         <Button className={styles.btn}/>
       </div>
     </section>
-    <section className={styles.section}></section>
-    <section className={styles.section}></section>
-    <section className={styles.section}></section>
-    <section className={styles.section}></section>
-    <section className={styles.section}></section>
+    <section className={styles.two}>
+      <h1>Gallery</h1>
+      <div className={styles.two_images}>
+        <div className={cslx(styles.image_box1, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>
+        <div className={cslx(styles.image_box2, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box3, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box4, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box5, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box6, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box7, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+        <div className={cslx(styles.image_box8, styles.box)}>
+          <span></span>
+          <h2>Jane & Mike</h2>
+          <Link><button>See more</button></Link>
+        </div>        
+      </div>
+    </section>
+    <section className={styles.three}></section>
+    <section className={styles.four}></section>
+    <section className={styles.five}></section>
+    <section className={styles.six}></section>
   </div>
 );
 

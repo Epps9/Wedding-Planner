@@ -12,6 +12,7 @@
       height: 100vh;
       padding: 4rem 4rem 0 4rem;
       margin-bottom: 10px;
+      background-color: blanchedalmond;
     }
     .one {
       display: flex;
@@ -20,6 +21,7 @@
           width: 50%;
           object-fit: cover;
           margin-right: 30px;
+          animation: from-left 2s ease-out;
         }
         .side_content {
           display: flex;
@@ -27,26 +29,122 @@
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          h1 {
-            position: relative;
-            font-size: 3.5rem;
-            color: $second;
-            font-family: $decorative-text;
-            margin: 20px;
-            &::after {
-              content: '';
-              position: absolute;
-              bottom: -5px;
-              left: -60px;
-              height: 3px;
-              width: 300px;
-              background-color: $second;
-            }
-          }
+          animation: from-top 1s linear 1.2s forwards;
+          opacity: 0;
           p {
             margin: 50px;
           }
         }
+    }
+    .two {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .two_images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
+        h2 {
+          color: $first;
+          font-family: $decorative-text;
+          font-size: 2.5rem;
+          margin: 1rem;
+          text-shadow: 1px 1px $third;
+        }
+        button {
+          height: 40px;
+          width: 150px;
+          background: transparent;
+          border: 1px solid $first;
+          color: $first;
+          font-family: $normal-text;
+          font-size: 1rem;
+          margin: 1rem;
+          cursor: pointer;
+        }
+        .box {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-size: cover;
+          height: 300px;
+          width: 300px;
+          transition-duration: 2s;
+          transition-timing-function: ease-in-out;
+          &:hover span {
+            opacity: 0.5;
+          }
+          &:hover h2 {
+            transform: scale(1.2);
+          }
+          &:hover a {
+            transform: scale(1.2);
+          }
+        }
+        span {
+          position: absolute;
+          background-color: black;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+        }
+        .image_box1 {
+          background-image: url("../../../images/gallery/1.jpg");
+        }
+        .image_box2 {
+          background-image: url("../../../images/gallery/2.jpg");
+        }
+        .image_box3 {
+          background-image: url("../../../images/gallery/3.jpg");
+        }
+        .image_box4 {
+          background-image: url("../../../images/gallery/4.jpg");
+        }
+        .image_box5 {
+          background-image: url("../../../images/gallery/5.jpg");
+        }
+        .image_box6 {
+          background-image: url("../../../images/gallery/6.jpg");
+        }
+        .image_box7 {
+          background-image: url("../../../images/gallery/7.jpg");
+        }
+        .image_box8 {
+          background-image: url("../../../images/gallery/8.jpg");
+        }
+      }
+    }
+   
+}
 
-    }    
+
+h1 {
+  position: relative;
+  font-size: 3.5rem;
+  color: $second;
+  font-family: $decorative-text;
+  margin: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -60px;
+    height: 3px;
+    width: 300px;
+    background-color: $second;
+  }
+}
+
+@keyframes from-left {
+  from {transform: translateX(-100%)}
+  to {transform: translateX(0%); opacity: 1}
+}
+
+@keyframes from-top {
+  from {transform: translatey(-20%); opacity: 0}
+  to {transform: translateY(0%); opacity: 1}
 }

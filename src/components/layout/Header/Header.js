@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import styles from './Header.module.scss'; 
 
-import { Button } from '../../common/Button/Button';
-
 const Component = () => (
   <div className={styles.root}>
     <span></span>
