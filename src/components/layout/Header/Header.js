@@ -7,14 +7,14 @@ const Component = () => (
   <div className={styles.root}>
     <span></span>
     <ul className={styles.menu}>
-      <li><a>About us</a></li>
-      <li><a>Offer</a></li>
-      <li><a>Gallery</a></li>
-      <li><a>Inspirations</a></li>
-      <li><a>References</a></li>
-      <li><a>Contact</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#offer">Offer</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#inspirations">Inspirations</a></li>
+      <li><a href="#ref">References</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <button className={styles.btn_main}>Explore</button>
+    <a href="#about"><button className={styles.btn_main}>Explore</button></a>
   </div>
 );
 
