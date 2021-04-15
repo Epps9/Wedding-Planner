@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Button} from '../../common/Button/Button';
 import { Link } from 'react-router-dom';
-import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi';
+import { SliderData } from '../../features/ImageSlider/SliderData';
 
 import styles from './Homepage.module.scss';
 import cslx from 'clsx';
+import { ImageSlider } from '../../features/ImageSlider/ImageSlider';
 
 const Component = () => (
   <div className={styles.root}>
@@ -91,27 +92,11 @@ const Component = () => (
     </section>
     <section className={styles.five}>
       <h1>References</h1>
-      <span className={styles.arrow}></span>
-      <div className={styles.testimonials}>
-        <FiArrowRightCircle className={cslx(styles.arrow, styles.arrow_right)}/>
-        <div className={styles.testimonial}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Mat & Molly</h3>
-        </div>
-        <div className={styles.testimonial}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Mat & Molly</h3>
-        </div>  
-        <div className={styles.testimonial}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Mat & Molly</h3>
-        </div>
-        <FiArrowLeftCircle className={cslx(styles.arrow, styles.arrow_left)}/>
-      </div>
-      <span className={styles.arrow}></span>
+
+      <ImageSlider slides={SliderData}/>
+    
     </section>
     <section className={styles.six}></section>
-    <section className={styles.seven}></section>
   </div>
 );
 

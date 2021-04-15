@@ -203,35 +203,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      .testimonials {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        .testimonial {
-          background-color: indigo;
-          width: 350px;
-          height: 350px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-          padding: 0 10px;
-          margin: 0 20px
-        }
-      }
-      .arrow {
-        color:$third;
-        font-size: 2.5rem;
-        position: absolute;
-        top: 50%;
-      }
-      .arrow_right {
-        right: -4%;
-      }
-      .arrow_left {
-        left: -4%;
-      }
     }
    
 }

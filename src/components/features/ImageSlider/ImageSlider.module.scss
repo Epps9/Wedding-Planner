@@ -1,0 +1,37 @@
+@import '../../../styles/settings.scss';
+
+    .testimonials {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 0 auto;
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .testimonial {
+        width: 60%;
+        height: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 20px
+        }
+    }
+    .arrow {
+        color:$third;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+    }
+    .arrow_right {
+        right: 10%;
+    }
+    .arrow_left {
+        left: 10%;
+    }
+
