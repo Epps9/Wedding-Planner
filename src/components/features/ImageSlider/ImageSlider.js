@@ -9,14 +9,16 @@ import { SliderData } from './SliderData';
 const Component = ({slides}) => {
 
   const [current, setCurrent] = useState(0);
-  const lenght = slides.lenght;
+  const length = slides.length;
+
+  console.log('whaaaat???', length);
 
   const nextSlide = () => {
-    setCurrent(current === lenght -1 ? 0 : current + 1);
+    setCurrent(current === length -1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current ===  0 ? lenght - 1 : current - 1);
+    setCurrent(current ===  0 ? length - 1 : current - 1);
   };
 
   console.log('current', current);
@@ -31,7 +33,7 @@ const Component = ({slides}) => {
             {index === current && (
               <div className={styles.testimonial} >
                 <p>{slide.text}</p>
-                <h3>{slide.names}</h3>
+                <h2>{slide.names}</h2>
               </div>
             )}
           </div>

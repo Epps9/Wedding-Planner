@@ -1,0 +1,56 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    p {
+        text-align: center;
+        width: 80%;
+    }
+    .team_member {
+			  position: relative;
+        height: 700px;
+				margin-top: 100px;
+				padding: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "image name"
+        "image description";
+        place-items: center center;
+        img {
+          height: 100%;
+          width: 80%;
+          grid-area: image;
+          object-fit: cover;
+					border-radius: 50%;
+        }
+        h2 {
+					grid-area: name;
+					color: $second;
+					font-size: 3rem;
+					padding: 3rem;
+          }
+        p {
+          grid-area: description;
+        }
+    }
+}
+
+.bcg {
+  position: absolute;
+  background-size: cover;
+	background-image: url("../../../images/background/9.jpg");
+  top: 0;
+  left: -200px;
+  height: 100%;
+  width: 150%;
+  z-index: -10;
+  opacity: 0.12;
+}

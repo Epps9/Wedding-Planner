@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss'; 
 
@@ -11,7 +12,7 @@ const Component = () => (
       <li><a href="#offer">Offer</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#inspirations">Inspirations</a></li>
-      <li><a href="#ref">References</a></li>
+      <li><a href="#references">References</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#about"><button className={styles.btn_main}>Explore</button></a>

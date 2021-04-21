@@ -29,10 +29,10 @@
             text-shadow: 1px 1px black;
             transition: 0.5s ease-out;
             z-index: 20;
-            padding: 0 10px;
+            padding: 0 20px;
             &:hover {
                 transform: scale(1.2);
-                box-shadow: 1px 1px 1px 1px $fourth;
+                box-shadow: 0 0 8px $fourth;
             }
             a {
               cursor: pointer;

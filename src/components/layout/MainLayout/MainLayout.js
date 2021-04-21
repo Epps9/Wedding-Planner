@@ -8,10 +8,10 @@ import { Footer } from '../Footer/Footer';
 import { Homepage } from '../../views/Homepage/Homepage';
 
 
-const Component = () => (
+const Component = ({children}) => (
   <div className={styles.root}>
     <Header/>
-    <Homepage/>
+    {children}
     <Footer/>
   </div>
 );

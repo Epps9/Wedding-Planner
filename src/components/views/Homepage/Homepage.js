@@ -16,14 +16,14 @@ const Component = () => (
       <div id="about" className={styles.side_content}>
         <h1>About us</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <Button className={styles.btn}/>
+        <Link to="/aboutus"><Button className={styles.btn}/></Link>
       </div>
     </section>
     <section className={styles.two}>
       <div id="offer" className={styles.side_content}>
         <h1>Our offer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <Button/>
+        <Link to="/offer"><Button className={styles.btn}/></Link>
       </div>
       <img src='https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg'></img>
     </section>
@@ -90,13 +90,20 @@ const Component = () => (
         </div>
       </div>
     </section>
-    <section className={styles.five}>
+    <section id="references" className={styles.five}>
+      <span className={styles.bcg}></span>
       <h1>References</h1>
 
       <ImageSlider slides={SliderData}/>
     
     </section>
-    <section className={styles.six}></section>
+    <section className={styles.six}>
+      <h1>Contact us</h1>
+      <form className={styles.contact_form}>
+        <input type="text" placeholder="e-mail"></input>
+        <textarea type="text" placeholder="your message"></textarea>
+      </form>
+    </section>
   </div>
 );
 
