@@ -7,12 +7,15 @@
 }
 
 .root {
-    .main_body {
-			height: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+    .components_wrapper {
+        padding: 3rem 0;
+        height: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 

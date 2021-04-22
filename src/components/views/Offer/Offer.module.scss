@@ -1,0 +1,57 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+		position: relative;
+    p {
+        font-family: $normal-text;
+        margin: 50px 150px;
+        text-align: center;
+    }
+		.packages {
+			display: flex;
+		}
+    .package {
+			margin: 1rem;
+			padding: 3rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-shadow: 0 0 10px $third;
+			background-color: $seventh;
+			transition: transform 0.6s;
+			border-radius: 10px;
+			&:hover {
+				transform: scale(1.2);
+			}
+        h2 {
+          color: $second;
+					font-size: 3.5rem;
+					text-align: center;
+        }
+				h3 {
+					font-family: $normal-text;
+					font-size: 2rem;
+					text-align: right;
+				}
+				ul {
+					margin: 3rem 0;
+					font-family: $normal-text;
+					li {
+						margin: 20px 0;
+					}
+				}
+    }
+		.gold {
+			background-image: radial-gradient(#E9CB8C 30%, #555453 99%);
+		}
+		.silver {
+			background-image: radial-gradient($fourth 20%, #555453 99%);
+		}
+		.brown {
+			background-image: radial-gradient($fifth 40%, #555453 99%);
+		}
+}

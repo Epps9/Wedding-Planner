@@ -11,7 +11,9 @@ import { Homepage } from '../../views/Homepage/Homepage';
 const Component = ({children}) => (
   <div className={styles.root}>
     <Header/>
-    {children}
+    <div className={styles.components_wrapper}>
+      {children}
+    </div>
     <Footer/>
   </div>
 );
