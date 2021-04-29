@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    h1 {
+        margin: 2rem;
+        display: inline-block;
+    }
+    .image {
+        height: 400px;
+        width: 30%;
+        margin: 1rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+.bcg {
+  position: absolute;
+  background-size: cover;
+	background-image: url("../../../images/background/flowers.jpg");
+  top: -50px;
+  left: -200px;
+  height: 120%;
+  width: 150%;
+  z-index: -10;
+  opacity: 0.12;
+}

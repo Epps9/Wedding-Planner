@@ -11,8 +11,6 @@ const Component = ({slides}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
-  console.log('whaaaat???', length);
-
   const nextSlide = () => {
     setCurrent(current === length -1 ? 0 : current + 1);
   };
@@ -20,8 +18,6 @@ const Component = ({slides}) => {
   const prevSlide = () => {
     setCurrent(current ===  0 ? length - 1 : current - 1);
   };
-
-  console.log('current', current);
 
   return (
     <div className={styles.testimonials}>

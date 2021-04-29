@@ -10,7 +10,9 @@ const Component = ( ) => (
     <h1>Offer</h1>
     <p>Aliquam erat volutpat. Nam suscipit lacus mauris, et pretium nibh sodales at. Cras quis ligula semper, cursus nunc sed, congue lectus. Fusce lacinia luctus nisl, in varius augue tincidunt quis. Nam facilisis ipsum id nisi iaculis, nec volutpat nibh condimentum. Sed congue maximus nisl hendrerit porta. Donec id lacus aliquet, aliquam massa in, commodo nisl. Suspendisse elit elit, semper a tempus facilisis, dignissim sit amet ligula.</p>
     <div className={styles.packages}>
-      <div className={clsx(styles.package, styles.gold)}>
+      <span></span>
+      <div className={styles.package}>
+        <span className={styles.gold}></span>
         <h2>Gold</h2>
         <ul>
           <li>Aliquam erat volutpat. </li>
@@ -22,7 +24,8 @@ const Component = ( ) => (
         </ul>
         <h3>3000$</h3>
       </div>
-      <div className={clsx(styles.package, styles.silver)}>
+      <div className={styles.package}>
+        <span className={styles.silver}></span>
         <h2>Silver</h2>
         <ul>
           <li>Aliquam erat volutpat. </li>
@@ -32,7 +35,8 @@ const Component = ( ) => (
         </ul>
         <h3>2000$</h3>
       </div>
-      <div className={clsx(styles.package, styles.brown)}>
+      <div className={styles.package}>
+        <span className={styles.brown}></span>
         <h2>Brown</h2>
         <ul>
           <li>Aliquam erat volutpat. </li>

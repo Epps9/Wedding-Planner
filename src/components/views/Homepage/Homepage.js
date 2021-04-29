@@ -4,11 +4,14 @@ import {Button} from '../../common/Button/Button';
 import { Link } from 'react-router-dom';
 import { SliderData } from '../../features/ImageSlider/SliderData';
 
+import { connect } from 'react-redux';
+
 import styles from './Homepage.module.scss';
 import cslx from 'clsx';
 import { ImageSlider } from '../../features/ImageSlider/ImageSlider';
+import { MainPageGalleryItem } from '../../features/MainPageGalleryItem/MainPageGalleryItem';
 
-const Component = () => (
+const Component = ({gallery}) => (
   <div className={styles.root}>
     <section className={styles.one}>
       <span className={styles.bcg}></span>
@@ -31,46 +34,9 @@ const Component = () => (
       <span className={styles.bcg}></span>
       <h1>Gallery</h1>
       <div className={styles.images}>
-        <div className={cslx(styles.image_box1, styles.box)}>
-          <span></span>
-          <h2>Jane & Mike</h2>
-          <Link><button>See more</button></Link>
-        </div>
-        <div className={cslx(styles.image_box2, styles.box)}>
-          <span></span>
-          <h2>Jasmine & Kenny</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box3, styles.box)}>
-          <span></span>
-          <h2>Daffne & John</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box4, styles.box)}>
-          <span></span>
-          <h2>Noala & Dwight</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box5, styles.box)}>
-          <span></span>
-          <h2>Monica & Dan</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box6, styles.box)}>
-          <span></span>
-          <h2>Kate & Frank</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box7, styles.box)}>
-          <span></span>
-          <h2>Lisa & Daniel</h2>
-          <Link><button>See more</button></Link>
-        </div>        
-        <div className={cslx(styles.image_box8, styles.box)}>
-          <span></span>
-          <h2>Anna & Ben</h2>
-          <Link><button>See more</button></Link>
-        </div>        
+        {gallery && gallery.map(item => (
+          <MainPageGalleryItem key={item.id} {...item}/>
+        ))}   
       </div>
     </section>
     <section id="inspirations" className={styles.four}>
@@ -97,24 +63,27 @@ const Component = () => (
       <ImageSlider slides={SliderData}/>
     
     </section>
-    <section className={styles.six}>
-      <h1>Contact us</h1>
-      <form className={styles.contact_form}>
-        <input type="text" placeholder="e-mail"></input>
-        <textarea type="text" placeholder="your message"></textarea>
-      </form>
-    </section>
+
   </div>
 );
 
 Component.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  id: PropTypes.string,
+  gallery: PropTypes.node,
 };
+
+const mapStateToProps = state => ({
+  gallery: state.gallery,
+});
+
+
+const Container = connect(mapStateToProps, null)(Component);
 
 
 export {
-  Component as Homepage,
-  // Container as Homepage,
+  //Component as Homepage,
+  Container as Homepage,
   Component as HomepageComponent,
 };

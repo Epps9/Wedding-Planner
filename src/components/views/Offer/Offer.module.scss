@@ -13,17 +13,28 @@
     }
 		.packages {
 			display: flex;
+			position: relative;
 		}
     .package {
+		  position: relative;
 			margin: 1rem;
 			padding: 3rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			box-shadow: 0 0 10px $third;
-			background-color: $seventh;
 			transition: transform 0.6s;
 			border-radius: 10px;
+			background-color: $second;
+			background-image: url("https://images.unsplash.com/photo-1525258946800-98cfd641d0de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+			span {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: black;
+			}
 			&:hover {
 				transform: scale(1.2);
 			}
@@ -45,13 +56,5 @@
 					}
 				}
     }
-		.gold {
-			background-image: radial-gradient(#E9CB8C 30%, #555453 99%);
-		}
-		.silver {
-			background-image: radial-gradient($fourth 20%, #555453 99%);
-		}
-		.brown {
-			background-image: radial-gradient($fifth 40%, #555453 99%);
-		}
 }
+
