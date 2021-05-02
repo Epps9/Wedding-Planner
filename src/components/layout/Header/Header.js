@@ -18,7 +18,7 @@ const Component = () => (
       <li><Link to="/inspirations">Inspirations</Link></li>
       <li><Link to="/contact">Contact us</Link></li>
     </ul>
-    <a href="#about"><button className={styles.btn_main}>Explore</button></a>
+    <img className={styles.btn_main} src={'/static/images/down-arrow.png'}></img>
   </div>
 );
 

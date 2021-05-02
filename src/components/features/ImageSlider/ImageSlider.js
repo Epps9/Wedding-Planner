@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi';
+import AOS from 'aos';
 
 import cslx from 'clsx';
 import styles from './ImageSlider.module.scss';
 import { SliderData } from './SliderData';
 
 const Component = ({slides}) => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000,
+    });
+  }, []);
 
   const [current, setCurrent] = useState(0);
   const length = slides.length;

@@ -59,20 +59,12 @@
     }
     .btn_main {
         position: absolute;
-        top: 80%;
-        left: 42%;
+        left: 47%;
         height: 70px;
-        width: 280px;
-        padding: auto 40px;
-        font-size: 1.8rem;
-        color: $first;
-        background: transparent;
-        border: 2px solid $first;
-        cursor: pointer;
-        font-family: $normal-text;
+        width: 70px;
         transition: 0.5s ease-out;
-        opacity: 0;
-        animation: appear 1.5s ease-out 1.8s forwards;
+        animation: keep-moving 1s linear 1.8s infinite alternate;
+        animation-play-state: running;
         outline: none;
         &:hover {
             transform: scale(1.4);
@@ -86,7 +78,7 @@
 }
 
 
-@keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes keep-moving {
+    from {top: 84%}
+    to {top: 88%}
 }

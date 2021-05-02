@@ -5,20 +5,20 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-	position: relative;
 	h1 {
 	  margin-top: 4rem;
 	}
     p {
-        font-family: $normal-text;
-        margin: 50px 150px;
-        text-align: center;
+			font-family: $normal-text;
+			margin: 50px 150px;
+			text-align: center;
     }
 		.packages {
 			display: flex;
-			position: relative;
 		}
     .package {
+			color: white;
+			text-shadow: 2px 2px 2px $second;
 		  position: relative;
 			margin: 1rem;
 			padding: 3rem;
@@ -29,35 +29,48 @@
 			transition: transform 0.6s;
 			border-radius: 10px;
 			background-color: $second;
-			background-image: url("https://images.unsplash.com/photo-1525258946800-98cfd641d0de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+			background-image: url("https://images.unsplash.com/photo-1486639107311-064febaff1c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
 			span {
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 100%;
-				background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+      }
+			.gold {
+				background-color: $gold;
+			}
+			.silver {
+				background-color: $silver;
+			}
+			.rose {
+				background-color: $rose;
 			}
 			&:hover {
 				transform: scale(1.2);
 			}
-        h2 {
-          color: $second;
-					font-size: 3.5rem;
-					text-align: center;
-        }
-				h3 {
-					font-family: $normal-text;
-					font-size: 2rem;
-					text-align: right;
+			h2 {
+				position: relative;
+				color: $eighth;
+				text-shadow: 2px 2px 2px $first;
+				font-size: 3.5rem;
+				text-align: center;
+			}
+			h3 {
+				font-family: $normal-text;
+				font-size: 2rem;
+				text-align: right;
+				position: relative;
+			}
+			ul {
+				position: relative;
+				margin: 3rem 0;
+				font-family: $normal-text;
+				li {
+					margin: 20px 0;
 				}
-				ul {
-					margin: 3rem 0;
-					font-family: $normal-text;
-					li {
-						margin: 20px 0;
-					}
-				}
+			}
     }
 }
 

@@ -18,8 +18,7 @@
           width: 48%;
           object-fit: cover;
           margin-right: 30px;
-          animation: from-left 2s ease-out;
-          padding: 3rem;
+          padding: 4rem;
         }
         .side_content {
           display: flex;
@@ -27,8 +26,6 @@
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          animation: from-top 1s linear 1.2s forwards;
-          opacity: 0;
             p {
               margin: 50px;
             }
@@ -43,8 +40,7 @@
           width: 48%;
           object-fit: cover;
           margin-right: 30px;
-          animation: from-right 2s ease-out;
-          padding: 3rem;
+          padding: 4rem;
         }
         .side_content {
           display: flex;
@@ -52,8 +48,6 @@
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          animation: from-top 1s linear 1.2s forwards;
-          opacity: 0;
           p {
             margin: 50px;
           }
@@ -240,22 +234,6 @@ span {
   width: 100%;
   opacity: 0;
 }
-
-@keyframes from-left {
-  from {transform: translateX(-100%)}
-  to {transform: translateX(0%); opacity: 1}
-}
-
-@keyframes from-top {
-  from {transform: translatey(-20%); opacity: 0}
-  to {transform: translateY(0%); opacity: 1}
-}
-
-@keyframes from-right {
-  from {transform: translateX(200%)}
-  to {transform: translateX(0%); opacity: 1}
-}
-
 
 @keyframes appear {
   from {opacity: 0;}
