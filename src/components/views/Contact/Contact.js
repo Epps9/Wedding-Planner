@@ -8,8 +8,8 @@ import clsx from 'clsx';
 
 import styles from './Contact.module.scss';
 
-const Component = ({className, children}) => (
-  <div className={clsx(className, styles.root)}>
+const Component = () => (
+  <div className={styles.root}>
     <h1>Contact us</h1>
     <form className={styles.contact_form}>
       <input type="text" placeholder="e-mail"></input>

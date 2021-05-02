@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+
 
 //import { connect } from 'react-redux';
 
@@ -7,13 +9,18 @@ import styles from './GalleryItemAll.module.scss';
 
 class Component extends React.Component {
 
+  componentDidMount() {
+    AOS.init({
+      duration : 2000,
+    });
+  }
 
   render () {
       
     const {names, image1, image2, image3, image4, image5, image6} = this.props;
 
     return (
-      <div className={styles.root}>
+      <div className={styles.root} data-aos="fade-up">
         <h1>{names}</h1>
         <div className={styles.gallery}>
           <img src={image1} className={styles.image}></img>

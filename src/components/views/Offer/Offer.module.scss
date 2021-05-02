@@ -5,7 +5,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-		position: relative;
+	position: relative;
+	h1 {
+	  margin-top: 4rem;
+	}
     p {
         font-family: $normal-text;
         margin: 50px 150px;

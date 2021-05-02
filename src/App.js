@@ -11,6 +11,8 @@ import { About } from './components/views/About/About';
 import { Offer } from './components/views/Offer/Offer';
 import { Gallery } from './components/views/Gallery/Gallery';
 import { GalleryItem } from './components/features/GalleryItem/GalleryItem';
+import { Inspirations } from './components/views/Inspirations/Inspirations';
+import { Contact } from './components/views/Contact/Contact';
 
 
 const App = () => (
@@ -21,6 +23,8 @@ const App = () => (
           <Route exact path='/' component={Homepage} />
           <Route exact path="/about" component={About}/>
           <Route exact path="/offer" component={Offer}/>
+          <Route exact path="/inspirations" component={Inspirations}/>
+          <Route exact path="/contact" component={Contact}/>
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/:id" component={GalleryItem}/>
         </Switch>
