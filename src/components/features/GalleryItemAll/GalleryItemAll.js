@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 //import { connect } from 'react-redux';
 
-import styles from './GalleryItem.module.scss';
+import styles from './GalleryItemAll.module.scss';
 
 class Component extends React.Component {
 
@@ -45,7 +45,7 @@ Component.propTypes = {
 //const Container = connect(mapStateToProps, null)(Component);
 
 export {
-  Component as GalleryItem,
+  Component as GalleryItemAll,
   //Container as GalleryItem,
-  Component as GalleryItemComponent,
+  Component as GalleryItemAllComponent,
 };

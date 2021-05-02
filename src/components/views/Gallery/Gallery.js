@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './Gallery.module.scss';
 import { connect } from 'react-redux';
 
-import { GalleryItem } from '../../features/GalleryItem/GalleryItem';
+import { GalleryItemAll } from '../../features/GalleryItemAll/GalleryItemAll';
 
 class Component extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class Component extends React.Component {
       <div className={styles.root}>
         <span className={styles.bcg}></span>
         {gallery && gallery.map(item => (
-          <GalleryItem key={item.id} {...item}/>
+          <GalleryItemAll key={item.id} {...item}/>
         ))}
       </div>
     );

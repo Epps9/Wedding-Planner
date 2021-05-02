@@ -10,43 +10,23 @@ import styles from './GalleryItem.module.scss';
 class Component extends React.Component {
 
 
-  render ({id}) {
-
-    if(window.location.href = 'http://localhost:3000/gallery') {
-      const {names, image1, image2, image3, image4, image5, image6} = this.props;
-
-      return (
-        <div className={styles.root}>
-          <h1>{names}</h1>
-          <div className={styles.gallery}>
-            <img src={image1} className={styles.image}></img>
-            <img src={image2} className={styles.image}></img>
-            <img src={image3} className={styles.image}></img>
-            <img src={image4} className={styles.image}></img>
-            <img src={image5} className={styles.image}></img>
-            <img src={image6} className={styles.image}></img>
-          </div>
-        </div>
-      );
-    } else if(window.location.href = `http://localhost:3000/${id}`) {
+  render () {
       
-      const {names, image1, image2, image3, image4, image5, image6} = this.props.galleryItem;
-      
-      return (
-        <div className={styles.root}>
-          <h1>{names}</h1>
-          <div className={styles.gallery}>
-            <img src={image1} className={styles.image}></img>
-            <img src={image2} className={styles.image}></img>
-            <img src={image3} className={styles.image}></img>
-            <img src={image4} className={styles.image}></img>
-            <img src={image5} className={styles.image}></img>
-            <img src={image6} className={styles.image}></img>
-          </div>
-        </div>
-      );
-    }
+    const {names, image1, image2, image3, image4, image5, image6} = this.props.galleryItem;
 
+    return (
+      <div className={styles.root}>
+        <h1>{names}</h1>
+        <div className={styles.gallery}>
+          <img src={image1} className={styles.image}></img>
+          <img src={image2} className={styles.image}></img>
+          <img src={image3} className={styles.image}></img>
+          <img src={image4} className={styles.image}></img>
+          <img src={image5} className={styles.image}></img>
+          <img src={image6} className={styles.image}></img>
+        </div>
+      </div>
+    );
   }
 }
 
