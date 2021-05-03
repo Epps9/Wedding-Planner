@@ -38,6 +38,17 @@
         border: 1px solid $third;
         box-shadow: 0 0 10px $third;
       }
+      .submit {
+        height: 3rem;
+        width: 10rem;
+        font-family: $normal-text;
+        font-size: 1.2rem;
+        border: none;
+        box-shadow: 0 0 4px $second;
+        &:hover {
+          box-shadow: 0 0 12px $second;
+        }
+      }
     }
   }
 
