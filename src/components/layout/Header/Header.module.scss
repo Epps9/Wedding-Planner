@@ -83,3 +83,30 @@
     from {top: 83%}
     to {top: 88%}
 }
+
+
+@media (min-device-width: 280px) and (max-device-width: 767px) {
+    .root {
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .menu {
+            flex-direction: column;
+            top: 12rem;
+            left: 9%;
+            text-align: center;
+            li {
+                margin: 15px 0;
+            }
+        }
+        .btn_main {
+            position: absolute;
+            left: 45%;
+            top: 84%;
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+}

@@ -108,31 +108,6 @@
             transform: scale(1.2);
           }
         }
-
-        .image_box1 {
-          background-image: url("../../../images/gallery/1.jpg");
-        }
-        .image_box2 {
-          background-image: url("../../../images/gallery/2.jpg");
-        }
-        .image_box3 {
-          background-image: url("../../../images/gallery/3.jpg");
-        }
-        .image_box4 {
-          background-image: url("../../../images/gallery/4.png");
-        }
-        .image_box5 {
-          background-image: url("../../../images/gallery/5.jpg");
-        }
-        .image_box6 {
-          background-image: url("../../../images/gallery/6.jpg");
-        }
-        .image_box7 {
-          background-image: url("../../../images/gallery/7.jpg");
-        }
-        .image_box8 {
-          background-image: url("../../../images/gallery/8.jpg");
-        }
       }
     }
 
@@ -238,4 +213,56 @@ span {
 @keyframes appear {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+
+@media (min-device-width: 280px) and (max-device-width: 767px) {
+  .bcg {
+    height: 104%;
+    left: -142px;
+  }
+  .root {
+    section {
+      height: 80vh;
+      padding: 0;
+
+    }
+    .one, .two {
+      img {
+        display: none;
+      }
+      .side_content {
+        justify-content: space-evenly;
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .three {
+      height: 150vh;
+      .images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+    .four {
+      height: 170vh;
+      .insp_boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .insp_box {
+          height: 100%;
+          width: 80%;
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    .five {
+      height: 110vh;
+    }
+  }
+
 }
