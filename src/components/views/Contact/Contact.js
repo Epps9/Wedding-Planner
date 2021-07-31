@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import AOS from 'aos';
+import {Link} from 'react-router-dom';
 
-import clsx from 'clsx';
+//import clsx from 'clsx';
 
 // import { connect } from 'react-redux';
 // import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
@@ -35,7 +36,7 @@ class Component extends React.Component {
   }
 
   handleSubmit(event) {
-    alert(`Your message ${this.state.message} has been sent!`);
+    alert(`Your message "${this.state.message}" has been sent!`);
     event.preventDefault();
     this.setState({email: '', message: ''});
   }
@@ -49,7 +50,7 @@ class Component extends React.Component {
         <form className={styles.contact_form} data-aos="fade-up" onSubmit={this.handleSubmit}>
           <input type="text" placeholder="e-mail" value={this.state.email} onChange={this.handleEmailChange}></input>
           <textarea type="text" placeholder="your message" value={this.state.message} onChange={this.handleMessageChange}></textarea>
-          <button className={styles.submit}type="submit">Send</button>
+          <Link to="/sent"><button className={styles.submit}type="submit">Send</button></Link>
         </form>
       </div>
     );

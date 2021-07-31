@@ -1,0 +1,26 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    width: 140%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient($first, $sixth);
+.message {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: $second;
+  box-shadow: black 1px 1px 10px;
+  text-shadow: $third 1px 1px 3px;
+  .icon {
+    color: $third;
+    margin-right: 0.8rem; 
+    font-size: 2rem;
+  }
+}
+}

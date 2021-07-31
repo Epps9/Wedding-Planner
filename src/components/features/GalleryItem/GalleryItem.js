@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
 import { getOneItem } from '../../../redux/imagesRedux';
 
 import styles from './GalleryItem.module.scss';
+
+import {RiArrowLeftCircleLine} from 'react-icons/ri';
 
 class Component extends React.Component {
 
@@ -16,7 +19,10 @@ class Component extends React.Component {
 
     return (
       <div className={styles.root}>
-        <h1>{names}</h1>
+        <div className={styles.title_wrapper}>
+          <Link to="/"><RiArrowLeftCircleLine className={styles.arrow}></RiArrowLeftCircleLine></Link>
+          <h1>{names}</h1>
+        </div>
         <div className={styles.gallery}>
           <img src={image1} className={styles.image}></img>
           <img src={image2} className={styles.image}></img>

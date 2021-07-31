@@ -23,7 +23,7 @@ const Component = () => {
     <div className={styles.team_member} data-aos="fade-left">
       <span className={styles.bcg}></span>
       <img src="https://images.unsplash.com/photo-1601859574836-7c19da24516a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"></img>
-      <h2>Jessica Simpson</h2>
+      <h2>Maura Willis</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at sapien nisi. Aenean feugiat mi sed eros elementum, ac faucibus lorem iaculis. Nulla suscipit consequat dolor sed imperdiet. Fusce efficitur purus tortor, ac hendrerit est efficitur pharetra. Aenean at urna sed nisl convallis condimentum. Integer aliquet et ex quis tempor. Ut ut blandit erat. Ut molestie mollis rhoncus. Donec facilisis, nibh quis mattis varius, mi tortor tristique risus, sed commodo magna nisi a neque. Suspendisse id tempor ex. Aliquam rhoncus metus in velit finibus volutpat. Sed scelerisque vitae diam sit amet placerat. Donec nec eros id nisl suscipit sollicitudin. Vivamus commodo turpis mi, at euismod dolor varius ac. Vivamus nec tempor nulla, nec elementum diam.</p>
     </div>
     <div className={styles.team_member} data-aos="fade-right">
@@ -34,7 +34,7 @@ const Component = () => {
     <div className={styles.team_member} data-aos="fade-left">
       <span className={styles.bcg}></span>
       <img src="https://images.unsplash.com/photo-1608504174559-b9eeee51c568?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"></img>
-      <h2>Lisa Minelli</h2>
+      <h2>Fay McGowan</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at sapien nisi. Aenean feugiat mi sed eros elementum, ac faucibus lorem iaculis. Nulla suscipit consequat dolor sed imperdiet. Fusce efficitur purus tortor, ac hendrerit est efficitur pharetra. Aenean at urna sed nisl convallis condimentum. Integer aliquet et ex quis tempor. Ut ut blandit erat. Ut molestie mollis rhoncus. Donec facilisis, nibh quis mattis varius, mi tortor tristique risus, sed commodo magna nisi a neque. Suspendisse id tempor ex. Aliquam rhoncus metus in velit finibus volutpat. Sed scelerisque vitae diam sit amet placerat. Donec nec eros id nisl suscipit sollicitudin. Vivamus commodo turpis mi, at euismod dolor varius ac. Vivamus nec tempor nulla, nec elementum diam.</p>
     </div>
   </div>

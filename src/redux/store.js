@@ -7,7 +7,6 @@ import { initialState } from './initialState';
 
 // define reducers
 const reducers = {
-
 };
 
 // add blank reducers for initial state properties without reducers

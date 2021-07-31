@@ -60,6 +60,7 @@
     .btn_main {
         position: absolute;
         left: 47%;
+        top: 84%;
         height: 70px;
         width: 70px;
         transition: 0.5s ease-out;
@@ -79,6 +80,6 @@
 
 
 @keyframes keep-moving {
-    from {top: 84%}
+    from {top: 83%}
     to {top: 88%}
 }

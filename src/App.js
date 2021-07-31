@@ -13,6 +13,7 @@ import { Gallery } from './components/views/Gallery/Gallery';
 import { GalleryItem } from './components/features/GalleryItem/GalleryItem';
 import { Inspirations } from './components/views/Inspirations/Inspirations';
 import { Contact } from './components/views/Contact/Contact';
+import { MessageSent } from './components/views/MessageSent/MessageSent';
 
 
 const App = () => (
@@ -25,6 +26,7 @@ const App = () => (
           <Route exact path="/offer" component={Offer}/>
           <Route exact path="/inspirations" component={Inspirations}/>
           <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/sent" component={MessageSent}/>
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/:id" component={GalleryItem}/>
         </Switch>

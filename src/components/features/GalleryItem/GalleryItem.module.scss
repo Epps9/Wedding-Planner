@@ -4,17 +4,29 @@
     margin: 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    h1 {
-        margin: 2rem;
-        display: inline-block;
+    justify-content: center;
+    .title_wrapper {
+        position: relative;
+        .arrow {
+            position: absolute;
+            left: -140%;
+            top: 10%;
+            font-size: 45px;
+            color: $third;
+        }
     }
-    .image {
-        height: 400px;
-        width: 30%;
-        margin: 1rem;
-        object-fit: cover;
-        border-radius: 5px;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .image {
+            height: 400px;
+            width: 30%;
+            margin: 1rem;
+            object-fit: cover;
+            border-radius: 5px;
+        }
     }
 }
