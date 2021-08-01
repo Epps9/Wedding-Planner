@@ -38,3 +38,63 @@
         left: 10%;
     }
 
+
+
+@media (min-device-width: 280px) and (max-device-width: 767px) {
+  .testimonials {
+    margin: 2rem 0 2rem 0;
+    .testimonial {
+      margin: 0;
+      width: 250px;
+      text-align: justify;
+      padding: 0 7px;
+      p {
+        font-size: 12px;
+        padding: 0;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .arrow {
+    color:$third;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 30%;
+  }
+  .arrow_right {
+    right: -18%;
+  }
+  .arrow_left {
+    left:-18%;
+  }
+}
+
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .testimonials {
+    .testimonial {
+      text-align: justify;
+      width: 500px;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .arrow {
+    top: 30%;
+    font-size: 3rem;
+  }
+  .arrow_right {
+    right: -10%;
+  }
+  .arrow_left {
+    left: -10%;
+  }
+
+}
+
+

@@ -90,14 +90,25 @@
         background-position: center;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        .menu {
+        padding: 1.5rem 1rem;
+        .logo_wrapper {
+          .logo {
+            height: 40px;
+            width: 40px;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+        .menu  {
             flex-direction: column;
-            top: 12rem;
-            left: 9%;
             text-align: center;
+            top: 15%;
+            right: 25%;
             li {
                 margin: 15px 0;
+                padding: 0 10px;
+
             }
         }
         .btn_main {
@@ -108,5 +119,29 @@
             width: 50px;
         }
     }
+
+}
+
+
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .root {
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      .menu  {
+          flex-direction: column;
+          text-align: center;
+          li {
+              margin: 15px 0;
+              padding: 0 10px;
+
+          }
+      }
+      .btn_main {
+          position: absolute;
+          left: 45%;
+      }
+  }
 
 }

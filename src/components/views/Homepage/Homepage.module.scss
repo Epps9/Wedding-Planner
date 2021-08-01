@@ -218,14 +218,15 @@ span {
 
 @media (min-device-width: 280px) and (max-device-width: 767px) {
   .bcg {
-    height: 104%;
-    left: -142px;
+    height: 100%;
+    left: -169px;
   }
   .root {
     section {
       height: 80vh;
       padding: 0;
-
+      margin: 0;
+      padding-top: 2rem;
     }
     .one, .two {
       img {
@@ -245,15 +246,19 @@ span {
         grid-template-rows: repeat(4, 1fr);
       }
     }
+
+
     .four {
-      height: 170vh;
+      height: 120vh;
+      margin-top: 9rem;
       .insp_boxes {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0;
         .insp_box {
           height: 100%;
-          width: 80%;
+          width: 50%;
           h2 {
             font-size: 2.5rem;
           }
@@ -262,7 +267,71 @@ span {
     }
     .five {
       height: 110vh;
+      padding: 0;
+      h1 {
+        margin-bottom: 0;
+      }
     }
   }
 
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+  .bcg {
+    left: -220px;
+  }
+  .root {
+    section {
+      height: 80vh;
+      padding: 0;
+      margin: 0;
+      padding-top: 2rem;
+    }
+    .one, .two {
+      img {
+        display: none;
+      }
+      .side_content {
+        justify-content: space-evenly;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .three {
+      height: 125vh;
+      .images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+
+
+    .four {
+      height: 100vh;
+      margin-top: 5rem;
+      .insp_boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        .insp_box {
+          height: 100%;
+          width: 50%;
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    .five {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

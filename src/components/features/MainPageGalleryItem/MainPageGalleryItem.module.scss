@@ -24,6 +24,7 @@
           }
         h2 {
           position: relative;
+          text-shadow: 2px 2px $second;
         }
       img {
           position: absolute;
@@ -73,3 +74,12 @@
     background-image: url("../../../images/gallery/8.jpg");
     }
 
+
+  @media (min-device-width: 280px) and (max-device-width: 767px) {
+    .box {
+      h2 {
+        font-size: 2.2rem;
+        margin: 1rem 2rem;
+      }
+    }
+  }
