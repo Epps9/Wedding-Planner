@@ -39,7 +39,7 @@
         list-style-type: none;
         animation: move-left 1.5s ease-out;
         li {
-            margin: 0 25px;
+            margin: 0 10px;
             font-size: 2.3rem;
             font-family: $decorative-text;
             text-shadow: 1px 1px black;
@@ -129,13 +129,22 @@
       background-position: center;
       display: flex;
       justify-content: center;
+      .logo_wrapper {
+        margin-top: 1.5rem;
+        p {
+          font-size: 4rem;
+        }
+      }
       .menu  {
+          position: relative;
+          right: 0;
           flex-direction: column;
           text-align: center;
+          margin: auto 0;
           li {
-              margin: 15px 0;
-              padding: 0 10px;
-
+              margin: 0;
+              font-size: 4rem;
+              padding: 1.5rem;
           }
       }
       .btn_main {

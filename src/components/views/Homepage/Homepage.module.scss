@@ -3,9 +3,8 @@
   .root {
 
     section {
-      width: 100%;
-      height: 100vh;
       padding: 2rem 0;
+      height: 100vh;
     }
     .one {
       display: flex;
@@ -118,24 +117,27 @@
       flex-direction: column;
       align-items: center;
       .insp_boxes {
+        height: 100vh;
+        width: 100vw;
         display: flex;
         justify-content: center;
-        height: 70%;
-        width: 100%;
         margin: 10% 0;
         .insp_box {
-          height: 90%;
-          width: 25%;
-          margin: 10px 30px;
+          width: 30%;
+          margin: 10px 10px;
           display: flex;
           justify-content: center;
           align-items: center;
           background-size: cover;
+          background-position: center;
           transition: transform 0.5s linear;
           &:hover {
             transform: scale(1.4);
             cursor: pointer;
             opacity: 0.7;
+          }
+          h1 {
+            margin-bottom: 0;
           }
           h2 {
             font-size: 3.5rem;
@@ -156,7 +158,7 @@
     .five {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       position: relative;
       .bcg {
@@ -226,7 +228,7 @@ span {
       height: 80vh;
       padding: 0;
       margin: 0;
-      padding-top: 2rem;
+      padding: 2rem 0;
     }
     .one, .two {
       img {
@@ -240,17 +242,18 @@ span {
       }
     }
     .three {
-      height: 150vh;
+      height: 1000px;
       .images {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
       }
+
     }
 
 
     .four {
       height: 120vh;
-      margin-top: 9rem;
+      margin-top: 2rem;
       .insp_boxes {
         flex-direction: column;
         justify-content: center;
@@ -279,7 +282,10 @@ span {
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
 
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.7rem;
   }
   .bcg {
     left: -220px;
@@ -298,7 +304,8 @@ span {
       .side_content {
         justify-content: space-evenly;
         p {
-          font-size: 18px;
+          font-size: 1.5rem;
+          text-align: center;
         }
       }
     }
@@ -307,6 +314,16 @@ span {
       .images {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        button {
+          height: 50px;
+          width: 200px;
+          font-size: 1.5rem;
+        }
+      }
+      .box {
+        h2 {
+          margin: 0;
+        }
       }
     }
 
@@ -322,9 +339,6 @@ span {
         .insp_box {
           height: 100%;
           width: 50%;
-          h2 {
-            font-size: 2.5rem;
-          }
         }
       }
     }
