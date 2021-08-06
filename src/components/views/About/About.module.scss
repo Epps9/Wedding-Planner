@@ -54,3 +54,58 @@
   z-index: -10;
   opacity: 0.12;
 }
+
+
+@media (min-device-width: 280px) and (max-device-width: 767px) {
+  .bcg {
+    top: 0;
+    left: -150px;
+    height: 125%;
+  }
+  .root {
+    width: 115%;
+    margin-bottom: 8rem;
+    p {
+      font-size: 10px;
+      text-align: justify;
+    }
+    .team_member {
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "name"
+      "image"
+      "description";
+      h2 {
+        padding: 0;
+        font-size: 2.5rem;
+      }
+      img {
+        height: 70%;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 124px) {
+
+  .root {
+    p {
+      font-size: 10px;
+      text-align: justify;
+    }
+    .team_member {
+      h2 {
+        padding: 0;
+        font-size: 2.5rem;
+      }
+      img {
+        height: 70%;
+        width: 50%;
+      }
+    }
+  }
+}
