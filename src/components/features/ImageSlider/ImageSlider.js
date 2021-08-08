@@ -28,22 +28,24 @@ const Component = ({slides}) => {
 
   return (
     <div className={styles.testimonials}>
-      <FiArrowRightCircle className={cslx(styles.arrow, styles.arrow_right)} onClick={nextSlide}/>
+
 
       {SliderData.map((slide, index) => {
         return (
           <div className={styles.wrapper} key={index}>
             {index === current && (
-              <div className={styles.testimonial} >
+              <div className={styles.testimonial}>
+                <FiArrowRightCircle className={cslx(styles.arrow, styles.arrow_right)} onClick={nextSlide}/>
                 <p>{slide.text}</p>
                 <h2>{slide.names}</h2>
+                <FiArrowLeftCircle className={cslx(styles.arrow, styles.arrow_left)} onClick={prevSlide}/>
               </div>
             )}
           </div>
         );
       })}
 
-      <FiArrowLeftCircle className={cslx(styles.arrow, styles.arrow_left)} onClick={prevSlide}/>
+
     </div>
   );
 
