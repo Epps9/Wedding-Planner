@@ -1,7 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .root {
-    width: 140%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,5 +51,35 @@
       }
     }
   }
+
+  @media (min-device-width: 280px) and (max-device-width: 767px) {
+    .root {
+      .contact_form {
+        input, textarea {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  @media (min-device-width: 768px) and (max-device-width: 1024px) {
+    .root {
+      .contact_form {
+        input, textarea {
+          width: 90%;
+          font-size: 22px;
+        }
+        input {
+          height: 60px;
+        }
+        .submit {
+          height: 70px;
+          width: 230px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
 
 
