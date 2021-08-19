@@ -17,17 +17,16 @@
         position: absolute;
         background-size: cover;
         background-image: url("../../../images/background/9.jpg");
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         z-index: -10;
         opacity: 0.12;
       }
       .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        padding: 4rem 4rem 12rem;
         h2 {
 					color: $second;
         }
@@ -49,7 +48,8 @@
   .root {
     .box {
       flex-direction: row;
-      height: 90vh;
+      justify-content: center;
+      height: 100vh;
       margin-top: 1.5rem;
       h2 {
         margin: 1.5rem 0;
@@ -57,12 +57,11 @@
       img {
         display: none;
       }
-      p {
-        margin-bottom: 2rem;
-      }
       .content {
-        padding: 4rem 0;
-        margin-left: 2rem;
+        p{
+          width: 100vw;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

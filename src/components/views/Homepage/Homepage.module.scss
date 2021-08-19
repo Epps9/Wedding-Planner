@@ -175,7 +175,7 @@
   top: 0;
   left: -200px;
   height: 100%;
-  width: 150%;
+  width: 110%;
   z-index: -10;
   opacity: 0.12;
 }
@@ -222,6 +222,7 @@ span {
 @media (min-device-width: 280px) and (max-device-width: 767px) {
   .bcg {
     height: 100%;
+    width: 135%;
     left: -169px;
   }
 
