@@ -3,6 +3,7 @@
 .root {
     position: relative;
     height: 100vh;
+    width: 100vw;
     background-image: url("../../../images/header.jpg");
     background-size: cover;
     padding: 1.5rem 0 0 1rem;
@@ -15,48 +16,51 @@
         opacity: 0.5;
         background-color: $second;
     }
-    .logo_wrapper {
-			display: flex;
-			position: absolute;
-			text-decoration: none;
-			.logo {
+    .header_content {
+      display: flex;
+      flex-direction: row;
+			justify-content: space-between;
+			.logo_wrapper{
+				display: flex;
+				flex-direction: row;
+				text-decoration: none;  
+				img {
 					height: 50px;
 					width: 50px;
 					color: white;
-					margin-right: 10px;
+					z-index: 20;
+				}
+				p {
+					font-family: $logo;
+					color: $first;
+					font-size: 2.5rem;
+					margin-left: 60px;
+					z-index: 20;
+				}
 			}
-			p {
-				font-family: $logo;
-				color: $first;
-				font-size: 2.5rem;
-			}
-    }
-    .menu {
-        position: absolute;
-        right: 2rem;
-        color: $first;
+      .menu {
         display: flex;
-        list-style-type: none;
+				list-style-type: none;
         animation: move-left 1.5s ease-out;
-        li {
-            margin: 0 10px;
-            font-size: 2.3rem;
-            font-family: $decorative-text;
-            text-shadow: 1px 1px black;
-            transition: 0.5s ease-out;
-            z-index: 20;
-            padding: 0 20px;
-            &:hover {
-                transform: scale(1.2);
-                box-shadow: 0 0 8px $fourth;
-            }
-            a {
-              cursor: pointer;
-              text-decoration: none;
-              color: $first;
-            }
-        }
+				z-index: 20;
+				a {
+					color: white;
+					text-decoration: none;
+					margin-right: 50px;
+					font-size: 2.3rem;
+					font-family: $decorative-text;
+					text-shadow: 1px 1px black;
+					transition: 0.5s ease-out;
+					padding: 5px 10px;
+					&:hover {
+						transform: scale(1.2);
+						box-shadow: 0 0 8px $fourth;
+				  }
+				}	
+      }
     }
+
+
     .btn_main {
         position: absolute;
         left: 47%;
@@ -87,37 +91,31 @@
 
 @media (min-device-width: 280px) and (max-device-width: 767px) {
     .root {
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        padding: 1.5rem 1rem;
-        .logo_wrapper {
-          .logo {
-            height: 40px;
-            width: 40px;
-          }
-          p {
-            font-size: 2rem;
-          }
-        }
-        .menu  {
-            flex-direction: column;
-            text-align: center;
-            top: 15%;
-            right: 28%;
-            li {
-                margin: 15px 0;
-                padding: 0 10px;
-
-            }
-        }
-        .btn_main {
-            position: absolute;
-            left: 45%;
-            top: 84%;
-            height: 50px;
-            width: 50px;
-        }
+      background-position: center;
+			.header_content {
+				display: flex;
+				flex-direction: column;
+				.logo_wrapper {
+					margin-bottom: 20%;
+					p {
+						margin-left: 10px ;
+					}
+				}
+				.menu {
+					flex-direction: column;
+					width: 90vw;
+					text-align: center;
+					margin: 0 1.7rem;
+					li {
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.btn_main {
+				left: 43%;
+				height: 50px;
+        width: 50px;
+			}
     }
 
 }
@@ -126,31 +124,37 @@
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
   .root {
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      .logo_wrapper {
-        margin-top: 1.5rem;
-        p {
-          font-size: 4rem;
-        }
-      }
-      .menu  {
-          position: relative;
-          right: 0;
-          flex-direction: column;
-          text-align: center;
-          margin: auto 0;
-          li {
-              margin: 0;
-              font-size: 4rem;
-              padding: 1.5rem;
-          }
-      }
-      .btn_main {
-          position: absolute;
-          left: 45%;
-      }
-  }
+		background-position: center;
+		.header_content {
+			display: flex;
+			flex-direction: column;
+			.logo_wrapper {
+				margin-bottom: 12%;
+				img {
+					height: 80px;
+					width: 80px;
+				}
+				p {
+					margin-left: 10px ;
+					font-size: 4.5rem;
+				}
+			}
+			.menu {
+				flex-direction: column;
+				width: 90vw;
+				text-align: center;
+				margin: 0 2rem;
+				li {
+					margin-bottom: 40px;
+				}
+				a {
+					font-size: 4rem;
+				}
+			}
+		}
+		.btn_main {
+			left: 45%;
+		}
+	}
 
 }
