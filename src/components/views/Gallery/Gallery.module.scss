@@ -1,7 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .root {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   position: relative;
   h1 {
@@ -21,25 +21,19 @@
 position: absolute;
 background-size: cover;
 background-image: url("../../../images/background/flowers.jpg");
-top: -50px;
-left: -200px;
+left: 0;
 height: 120%;
-width: 150%;
+width: 100%;
 z-index: -10;
 opacity: 0.12;
 }
 
 
 @media (min-device-width: 280px) and (max-device-width: 767px) {
+
   h1 {
     font-size: 2.5rem;
   }
-  .bcg {
-    top: -50px;
-    left: -100px;
-    height: 120%;
-    width: 150%;
-    }
 }
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
