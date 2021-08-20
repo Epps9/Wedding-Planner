@@ -34,7 +34,7 @@
 					font-family: $logo;
 					color: $first;
 					font-size: 2.5rem;
-					margin-left: 60px;
+					margin-left: 15px;
 					z-index: 20;
 				}
 			}
@@ -95,10 +95,12 @@
 			.header_content {
 				display: flex;
 				flex-direction: column;
+				justify-content: center;
 				.logo_wrapper {
 					margin-bottom: 20%;
 					p {
 						margin-left: 10px ;
+						font-size: 2rem;
 					}
 				}
 				.menu {
@@ -135,7 +137,7 @@
 					width: 80px;
 				}
 				p {
-					margin-left: 10px ;
+					margin-left: 10px;
 					font-size: 4.5rem;
 				}
 			}
@@ -153,7 +155,7 @@
 			}
 		}
 		.btn_main {
-			left: 45%;
+			left: 42%;
 		}
 	}
 

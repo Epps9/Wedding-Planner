@@ -1,6 +1,9 @@
 @import '../../../styles/settings.scss';
 
 .root {
+    h1 {
+      margin-top: 4rem;
+    }
     width: 100vw;
     height: auto;
     display: flex;
@@ -9,6 +12,7 @@
     p {
         text-align: justify;
         width: 80%;
+        margin-bottom: 17rem;
     }
     .team_member {
 			  position: relative;
@@ -42,9 +46,6 @@
     }
 }
 
-h1 {
-  margin-top: 4rem;
-}
 
 .bcg {
   position: absolute;
@@ -64,16 +65,18 @@ h1 {
   .root {
     p {
       font-size: 10px;
-      width: 100%;
+      width: 85%;
+      margin-bottom: 2rem;
     }
     .team_member {
+      padding: 2rem 0;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       img {
-        height: 25%;
-        width: 50%;
+        height: 150px;
+        width: 150px;
       }
       p {
         padding: 0;
@@ -101,16 +104,25 @@ h1 {
   .root {
     p {
       font-size: 10px;
-      width: 100%;
+      width: 85%;
+      margin-bottom: 2rem;
     }
     .team_member {
-      height: 80vh;
+      padding: 2rem 0;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      margin: 0;
       img {
-        height: 40%;
-        width: 50%;
+        height: 250px;
+        width: 220px;
+      }
+      p {
+        padding: 0;
+      }
+      h2 {
+        padding: 2rem;
       }
     }
   }
@@ -122,7 +134,7 @@ h1 {
   }
 
   .bcg {
-    height: 87vh;
+    height: 100vh;
   }
   
 }
@@ -132,7 +144,7 @@ h1 {
   .root {
     p {
       font-size: 20px;
-      width: 100%;
+      width: 85%;
       margin-bottom: 4rem;
     }
     .team_member {
@@ -141,8 +153,8 @@ h1 {
       flex-direction: column;
       justify-content: space-evenly;
       img {
-        height: 50%;
-        width: 60%;
+        height: 350px;
+        width: 320px;
       }
       h2 {
         padding: 0;
