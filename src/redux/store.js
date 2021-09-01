@@ -1,12 +1,14 @@
 import {combineReducers, createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import {reducer as galleryReducer} from '../redux/galleryRedux';
 
 import { initialState } from './initialState';
 
 
 // define reducers
 const reducers = {
+  gallery: galleryReducer,
 };
 
 // add blank reducers for initial state properties without reducers

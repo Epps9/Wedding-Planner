@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { getOneItem } from '../../../redux/imagesRedux';
+import { getOneItem } from '../../../redux/galleryRedux';
 
 import styles from './GalleryItem.module.scss';
 
@@ -50,7 +50,6 @@ Component.propTypes = {
 };
 
 const mapStateToProps = (state, props) => {
-  console.log('dsdasdad', props);
   return ({
     galleryItem: getOneItem(state, props.match.params.id),
   });
