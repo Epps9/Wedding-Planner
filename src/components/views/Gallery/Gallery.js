@@ -24,7 +24,7 @@ class Component extends React.Component {
     return(
       <div className={styles.root}>
         <span className={styles.bcg}></span>
-        {gallery.data && gallery.data[0].map(item => (
+        {gallery && gallery.map(item => (
           <GalleryItemAll key={item.id} {...item}/>
         ))}
       </div>

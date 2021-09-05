@@ -35,7 +35,7 @@ export const fetchGallery = () => {
       .get(`${API_URL}/gallery`)
       .then(res => {
         dispatch(fetchSuccess(res.data));
-        console.log('dane',res.data);
+        console.log('dane',typeof(res.data));
       })
       .catch(err => {
         dispatch(fetchError(err.message || true));
@@ -45,7 +45,7 @@ export const fetchGallery = () => {
 
 
 /* reducer */
-export const reducer = (statePart = initialState, action = {}) => {
+export const reducer = (statePart = [], action = {}) => {
   switch (action.type) {
     case FETCH_START: {
       return {
@@ -53,11 +53,10 @@ export const reducer = (statePart = initialState, action = {}) => {
       };
     }
     case FETCH_SUCCESS: {
-      console.log('co to kurwa jest',typeof(action.payload));
       return {
-        data: [action.payload],
+        gallery: [...action.payload],
       };
-    };
+    }
     case FETCH_ERROR: {
       return {
         ...statePart,
