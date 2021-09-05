@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './MainPageGalleryItem.module.scss';
 
-const Component = ({id, names, main_image}) => (
+const MainPageGalleryItem = ({id, names, main_image}) => (
   <div className={styles.box}>
     <span></span>
     <img src={main_image}></img>
@@ -17,7 +17,7 @@ const Component = ({id, names, main_image}) => (
   </div>
 );
 
-Component.propTypes = {
+MainPageGalleryItem.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   names: PropTypes.string,
@@ -25,18 +25,5 @@ Component.propTypes = {
   main_image: PropTypes,
 };
 
-// const mapStateToProps = state => ({
-//   someProp: reduxSelector(state),
-// });
 
-// const mapDispatchToProps = dispatch => ({
-//   someAction: arg => dispatch(reduxActionCreator(arg)),
-// });
-
-// const Container = connect(mapStateToProps, mapDispatchToProps)(Component);
-
-export {
-  Component as MainPageGalleryItem,
-  // Container as MainPageGalleryItem,
-  Component as MainPageGalleryItemComponent,
-};
+export default MainPageGalleryItem;

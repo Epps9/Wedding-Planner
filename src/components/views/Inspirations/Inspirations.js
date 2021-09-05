@@ -6,16 +6,11 @@ import accessories from '../../../images/inspirations/accessories.jpg';
 import AOS from 'aos';
 
 
-import { Button } from '../../common/Button/Button';
-
-//import clsx from 'clsx';
-
-// import { connect } from 'react-redux';
-// import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
+import Button from '../../common/Button/Button';
 
 import styles from './Inspirations.module.scss';
 
-const Component = () => {
+const Inspirations = () => {
 
   useEffect(() => {
     AOS.init({
@@ -56,23 +51,10 @@ const Component = () => {
   );
 };
 
-Component.propTypes = {
+Inspirations.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
-// const mapStateToProps = state => ({
-//   someProp: reduxSelector(state),
-// });
 
-// const mapDispatchToProps = dispatch => ({
-//   someAction: arg => dispatch(reduxActionCreator(arg)),
-// });
-
-// const Container = connect(mapStateToProps, mapDispatchToProps)(Component);
-
-export {
-  Component as Inspirations,
-  // Container as Inspirations,
-  Component as InspirationsComponent,
-};
+export default Inspirations;

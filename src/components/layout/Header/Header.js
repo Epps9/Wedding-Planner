@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss'; 
 
-const Component = () => (
+const Header = () => (
   <div className={styles.root}>
     <span></span>
     <div className={styles.header_content}>
@@ -24,14 +24,9 @@ const Component = () => (
   </div>
 );
 
-Component.propTypes = {
+Header.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
-
-export {
-  Component as Header,
-  // Container as Header,
-  Component as HeaderComponent,
-};
+export default Header;

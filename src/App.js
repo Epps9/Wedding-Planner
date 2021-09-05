@@ -5,15 +5,15 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
 
-import { MainLayout } from './components/layout/MainLayout/MainLayout';
+import MainLayout from './components/layout/MainLayout/MainLayout';
 import { Homepage } from './components/views/Homepage/Homepage';
-import { About } from './components/views/About/About';
-import { Offer } from './components/views/Offer/Offer';
+import About from './components/views/About/About';
+import Offer from './components/views/Offer/Offer';
 import { Gallery } from './components/views/Gallery/Gallery';
 import { GalleryItem } from './components/features/GalleryItem/GalleryItem';
-import { Inspirations } from './components/views/Inspirations/Inspirations';
-import { Contact } from './components/views/Contact/Contact';
-import { MessageSent } from './components/views/MessageSent/MessageSent';
+import Inspirations from './components/views/Inspirations/Inspirations';
+import Contact from './components/views/Contact/Contact';
+import MessageSent from './components/views/MessageSent/MessageSent';
 
 
 const App = () => (

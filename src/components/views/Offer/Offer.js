@@ -5,7 +5,7 @@ import AOS from 'aos';
 
 import styles from './Offer.module.scss';
 
-const Component = ( ) => {
+const Offer = ( ) => {
 
   useEffect(() => {
     AOS.init({
@@ -57,23 +57,10 @@ const Component = ( ) => {
   );
 };
 
-Component.propTypes = {
+Offer.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
-// const mapStateToProps = state => ({
-//   someProp: reduxSelector(state),
-// });
 
-// const mapDispatchToProps = dispatch => ({
-//   someAction: arg => dispatch(reduxActionCreator(arg)),
-// });
-
-// const Container = connect(mapStateToProps, mapDispatchToProps)(Component);
-
-export {
-  Component as Offer,
-  // Container as Offer,
-  Component as OfferComponent,
-};
+export default Offer;

@@ -5,7 +5,7 @@ import {FaCheckCircle} from 'react-icons/fa';
 
 import styles from './MessageSent.module.scss';
 
-const Component = () => (
+const MessageSent = () => (
   <div className={styles.root}>
     <div className={styles.message}>
       <FaCheckCircle className={styles.icon}/>
@@ -14,14 +14,10 @@ const Component = () => (
   </div>
 );
 
-Component.propTypes = {
+MessageSent.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
 
-export {
-  Component as MessageSent,
-  // Container as MessageSent,
-  Component as MessageSentComponent,
-};
+export default MessageSent;

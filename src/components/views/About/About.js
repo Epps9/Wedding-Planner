@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 import AOS from 'aos';
 
 
-import clsx from 'clsx';
-
-// import { connect } from 'react-redux';
-// import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
-
 import styles from './About.module.scss';
 
-const Component = () => {
+const About = () => {
   useEffect(() => {
     AOS.init({
       duration : 2000,
@@ -42,23 +37,10 @@ const Component = () => {
 
 };
 
-Component.propTypes = {
+About.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
-// const mapStateToProps = state => ({
-//   someProp: reduxSelector(state),
-// });
 
-// const mapDispatchToProps = dispatch => ({
-//   someAction: arg => dispatch(reduxActionCreator(arg)),
-// });
-
-// const Container = connect(mapStateToProps, mapDispatchToProps)(Component);
-
-export {
-  Component as About,
-  // Container as About,
-  Component as AboutComponent,
-};
+export default About;

@@ -7,7 +7,7 @@ import cslx from 'clsx';
 import styles from './ImageSlider.module.scss';
 import { SliderData } from './SliderData';
 
-const Component = ({slides}) => {
+const ImageSlider = ({slides}) => {
 
   useEffect(() => {
     AOS.init({
@@ -51,15 +51,11 @@ const Component = ({slides}) => {
 
 };
 
-Component.propTypes = {
+ImageSlider.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   slides: PropTypes.node,
 };
 
 
-export {
-  Component as ImageSlider,
-  // Container as ImageSlider,
-  Component as ImageSliderComponent,
-};
+export default ImageSlider;

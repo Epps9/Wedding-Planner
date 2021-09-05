@@ -4,7 +4,7 @@ import {FaFacebookSquare, FaInstagramSquare, FaTwitterSquare} from 'react-icons/
 
 import styles from './Footer.module.scss';
 
-const Component = () => (
+const Footer = () => (
   <div className={styles.root}>
     <div>
       <div className={styles.icons}>
@@ -16,14 +16,10 @@ const Component = () => (
   </div>
 );
 
-Component.propTypes = {
+Footer.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
 
-export {
-  Component as Footer,
-  // Container as Footer,
-  Component as FooterComponent,
-};
+export default Footer;

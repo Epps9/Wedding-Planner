@@ -9,9 +9,9 @@ import { SliderData } from '../../features/ImageSlider/SliderData';
 
 import { connect } from 'react-redux';
 
-import {Button} from '../../common/Button/Button';
-import { ImageSlider } from '../../features/ImageSlider/ImageSlider';
-import { MainPageGalleryItem } from '../../features/MainPageGalleryItem/MainPageGalleryItem';
+import Button from '../../common/Button/Button';
+import ImageSlider from '../../features/ImageSlider/ImageSlider';
+import MainPageGalleryItem from '../../features/MainPageGalleryItem/MainPageGalleryItem';
 
 const Component = ({gallery}) => {
 
@@ -85,16 +85,17 @@ Component.propTypes = {
   gallery: PropTypes.node,
 };
 
-const mapStateToProps = state => ({
-  gallery: state.gallery,
-});
+const mapStateToProps = state => {
+  return {
+    gallery: state.gallery,
+  };
+};
 
 
 const Container = connect(mapStateToProps, null)(Component);
 
 
 export {
-  //Component as Homepage,
   Container as Homepage,
   Component as HomepageComponent,
 };
