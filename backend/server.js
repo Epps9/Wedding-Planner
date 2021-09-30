@@ -28,7 +28,7 @@ db.on('error', err => console.log('Error: ' + err));
 
 
 /* START SERVER */
-
-app.listen(8000, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
     console.log('server is running on 8000');
 });
