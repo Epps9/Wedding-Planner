@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', galleryRoutes);
 
-/* API ERROR PAGES */
+//API ERROR PAGES 
 app.use('/api', (req, res) => {
   res.status(404).send({ message: 'Not found...' });
 });
