@@ -36,8 +36,8 @@ const ImageSlider = ({slides}) => {
             {index === current && (
               <div className={styles.testimonial}>
                 <FiArrowRightCircle className={cslx(styles.arrow, styles.arrow_right)} onClick={nextSlide}/>
-                <p>{slide.text}</p>
-                <h2>{slide.names}</h2>
+                <p data-aos="fade-down">{slide.text}</p>
+                <h2 data-aos="fade-up">{slide.names}</h2>
                 <FiArrowLeftCircle className={cslx(styles.arrow, styles.arrow_left)} onClick={prevSlide}/>
               </div>
             )}

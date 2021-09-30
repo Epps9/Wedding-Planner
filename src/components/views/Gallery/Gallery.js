@@ -7,15 +7,15 @@ import { connect } from 'react-redux';
 
 import { GalleryItemAll } from '../../features/GalleryItemAll/GalleryItemAll';
 
-import {fetchGallery} from '../../../redux/galleryRedux';
+//import {fetchGallery} from '../../../redux/galleryRedux';
 
 
 class Component extends React.Component {
 
 
-  componentDidMount () {
-    this.props.getGallery();
-  }
+  //componentDidMount () {
+  //this.props.getGallery();
+  //}
 
   render() {
 
@@ -43,11 +43,11 @@ const mapStateToProps = state => ({
   gallery: state.gallery,
 });
 
-const mapDispatchToProps = dispatch => ({
-  getGallery: () => dispatch(fetchGallery()),
-});
+//const mapDispatchToProps = dispatch => ({
+//getGallery: () => dispatch(fetchGallery()),
+//});
 
-const Container = connect(mapStateToProps, mapDispatchToProps)(Component);
+const Container = connect(mapStateToProps, null)(Component);
 
 export {
   //Component as Gallery,
