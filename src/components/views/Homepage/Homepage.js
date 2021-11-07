@@ -63,10 +63,10 @@ class Component extends React.Component {
               <span></span>
               <h2>Places</h2>
             </div></Link>
-            <div className={cslx(styles.insp_box, styles.dresses)}>
+            <Link to="/dresses"><div className={cslx(styles.insp_box, styles.dresses)}>
               <span></span>
               <h2>Dresses</h2>
-            </div>
+            </div></Link>
             <div className={cslx(styles.insp_box, styles.accessories)}>
               <span></span>
               <h2>Accessories</h2>

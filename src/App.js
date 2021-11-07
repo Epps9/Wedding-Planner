@@ -11,6 +11,7 @@ import About from './components/views/About/About';
 import Offer from './components/views/Offer/Offer';
 import { Gallery } from './components/views/Gallery/Gallery';
 import Places from './components/views/Places/Places';
+import Dresses from './components/views/Dresses/Dresses.js';
 import { GalleryItem } from './components/features/GalleryItem/GalleryItem';
 import Inspirations from './components/views/Inspirations/Inspirations';
 import Contact from './components/views/Contact/Contact';
@@ -30,6 +31,7 @@ const App = () => (
           <Route exact path="/sent" component={MessageSent}/>
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/places" component={Places}/>
+          <Route exact path="/dresses" component={Dresses}/>
           <Route exact path="/:id" component={GalleryItem}/>
         </Switch>
       </MainLayout>
