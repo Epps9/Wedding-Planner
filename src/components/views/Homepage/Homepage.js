@@ -36,7 +36,7 @@ class Component extends React.Component {
           <div id="about" className={styles.side_content}>
             <h1>About us</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <Link to="/aboutus"><Button className={styles.btn}/></Link>
+            <Link to="/about"><Button className={styles.btn}/></Link>
           </div>
         </section>
         <section className={styles.two} data-aos="fade-right">
@@ -59,10 +59,10 @@ class Component extends React.Component {
         <section id="inspirations" className={styles.four} data-aos="fade-up">
           <h1>Inspirations</h1>
           <div className={styles.insp_boxes}>
-            <div className={cslx(styles.insp_box, styles.places)}>
+            <Link to="/places"><div className={cslx(styles.insp_box, styles.places)}>
               <span></span>
               <h2>Places</h2>
-            </div>
+            </div></Link>
             <div className={cslx(styles.insp_box, styles.dresses)}>
               <span></span>
               <h2>Dresses</h2>

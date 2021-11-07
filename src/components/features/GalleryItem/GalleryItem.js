@@ -10,8 +10,9 @@ import styles from './GalleryItem.module.scss';
 
 import {RiArrowLeftCircleLine} from 'react-icons/ri';
 
-class Component extends React.Component {
 
+
+class Component extends React.Component {
 
   render () {
       
@@ -53,7 +54,6 @@ const mapStateToProps = (state, props) => {
   return ({
     galleryItem: getOneItem(state, props.match.params.id),
   });
-
 };
 
 

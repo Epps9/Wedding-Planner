@@ -210,6 +210,10 @@ span {
   opacity: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes appear {
   from {opacity: 0;}
   to {opacity: 1;}

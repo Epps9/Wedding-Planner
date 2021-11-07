@@ -10,6 +10,7 @@ import { Homepage } from './components/views/Homepage/Homepage';
 import About from './components/views/About/About';
 import Offer from './components/views/Offer/Offer';
 import { Gallery } from './components/views/Gallery/Gallery';
+import Places from './components/views/Places/Places';
 import { GalleryItem } from './components/features/GalleryItem/GalleryItem';
 import Inspirations from './components/views/Inspirations/Inspirations';
 import Contact from './components/views/Contact/Contact';
@@ -28,6 +29,7 @@ const App = () => (
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/sent" component={MessageSent}/>
           <Route exact path="/gallery" component={Gallery}/>
+          <Route exact path="/places" component={Places}/>
           <Route exact path="/:id" component={GalleryItem}/>
         </Switch>
       </MainLayout>
