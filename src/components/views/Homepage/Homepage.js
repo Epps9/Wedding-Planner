@@ -67,10 +67,10 @@ class Component extends React.Component {
               <span></span>
               <h2>Dresses</h2>
             </div></Link>
-            <div className={cslx(styles.insp_box, styles.accessories)}>
+            <Link to="/decorations"><div className={cslx(styles.insp_box, styles.decorations)}>
               <span></span>
-              <h2>Accessories</h2>
-            </div>
+              <h2>Decorations</h2>
+            </div></Link>
           </div>
         </section>
         <section id="references" className={styles.five} data-aos="fade-up">

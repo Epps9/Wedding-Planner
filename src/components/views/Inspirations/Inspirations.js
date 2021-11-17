@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
-import place from '../../../images/inspirations/INSP place.jpg';
+import place from '../../../images/inspirations/place.jpg';
 import dresses from '../../../images/inspirations/INSP dress.jpg';
-import accessories from '../../../images/inspirations/accessories.jpg';
+import decorations from '../../../images/inspirations/decorations.jpg';
 import AOS from 'aos';
+import {Link} from 'react-router-dom';
 
 
 import Button from '../../common/Button/Button';
@@ -26,7 +27,7 @@ const Inspirations = () => {
         <div className={styles.content}>
           <h2>Places</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at sapien nisi. Aenean feugiat mi sed eros elementum, ac faucibus lorem iaculis. Nulla suscipit consequat dolor sed imperdiet. Fusce efficitur purus tortor, ac hendrerit est efficitur pharetra. Aenean at urna sed nisl convallis condimentum. Integer aliquet et ex quis tempor. Ut ut blandit erat. Ut molestie mollis rhoncus. Donec facilisis, nibh quis mattis varius, mi tortor tristique risus, sed commodo magna nisi a neque. Suspendisse id tempor ex. Aliquam rhoncus metus in velit finibus volutpat. Sed scelerisque vitae diam sit amet placerat. Donec nec eros id nisl suscipit sollicitudin. Vivamus commodo turpis mi, at euismod dolor varius ac. Vivamus nec tempor nulla, nec elementum diam. Phasellus nec tortor euismod, porta ante at, tempus ex. Maecenas gravida nisi eget iaculis tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed facilisis sodales est sed gravida. </p>
-          <Button/>
+          <Link to="/places"><Button/></Link>
         </div>
         <img src={place}></img>
       </div>
@@ -35,17 +36,17 @@ const Inspirations = () => {
         <div className={styles.content}>
           <h2>Dresses</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at sapien nisi. Aenean feugiat mi sed eros elementum, ac faucibus lorem iaculis. Nulla suscipit consequat dolor sed imperdiet. Fusce efficitur purus tortor, ac hendrerit est efficitur pharetra. Aenean at urna sed nisl convallis condimentum. Integer aliquet et ex quis tempor. Ut ut blandit erat. Ut molestie mollis rhoncus. Donec facilisis, nibh quis mattis varius, mi tortor tristique risus, sed commodo magna nisi a neque. Suspendisse id tempor ex. Aliquam rhoncus metus in velit finibus volutpat. Sed scelerisque vitae diam sit amet placerat. Donec nec eros id nisl suscipit sollicitudin. Vivamus commodo turpis mi, at euismod dolor varius ac. Vivamus nec tempor nulla, nec elementum diam. Phasellus nec tortor euismod, porta ante at, tempus ex. Maecenas gravida nisi eget iaculis tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed facilisis sodales est sed gravida. </p>
-          <Button/>
+          <Link to="/dresses"><Button/></Link>
         </div>
       </div>
       <div className={styles.box} data-aos="fade-left">
         <span className={styles.bcg}></span>
         <div className={styles.content}>
-          <h2>Accessories</h2>
+          <h2>Decorations</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at sapien nisi. Aenean feugiat mi sed eros elementum, ac faucibus lorem iaculis. Nulla suscipit consequat dolor sed imperdiet. Fusce efficitur purus tortor, ac hendrerit est efficitur pharetra. Aenean at urna sed nisl convallis condimentum. Integer aliquet et ex quis tempor. Ut ut blandit erat. Ut molestie mollis rhoncus. Donec facilisis, nibh quis mattis varius, mi tortor tristique risus, sed commodo magna nisi a neque. Suspendisse id tempor ex. Aliquam rhoncus metus in velit finibus volutpat. Sed scelerisque vitae diam sit amet placerat. Donec nec eros id nisl suscipit sollicitudin. Vivamus commodo turpis mi, at euismod dolor varius ac. Vivamus nec tempor nulla, nec elementum diam. Phasellus nec tortor euismod, porta ante at, tempus ex. Maecenas gravida nisi eget iaculis tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed facilisis sodales est sed gravida. </p>
-          <Button/>
+          <Link to="/decorations"><Button/></Link>
         </div>
-        <img src={accessories}></img>
+        <img src={decorations}></img>
       </div>
     </div>
   );
