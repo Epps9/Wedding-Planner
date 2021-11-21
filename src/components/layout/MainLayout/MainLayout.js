@@ -7,16 +7,32 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 
-const MainLayout = ({children}) => {
+class MainLayout extends React.Component {
 
-  return (<div className={styles.root}>
-    <Header/>
-    <div className={styles.components_wrapper}>
-      {children}
-    </div>
-    <Footer/>
-  </div>
-  );
+  componentDidMount () {
+    setTimeout(function() {
+      window.scrollTo({
+        top: 950,
+        behavior: 'smooth',
+      });
+    }, 2000); 
+  }
+
+
+  render () {
+    const {children} = this.props;
+
+    return (  
+      <div className={styles.root}>
+        <Header/>
+        <div className={styles.components_wrapper}>
+          {children}
+        </div>
+        <Footer/>
+      </div>
+    );
+  }
+
 };
 
 MainLayout.propTypes = {

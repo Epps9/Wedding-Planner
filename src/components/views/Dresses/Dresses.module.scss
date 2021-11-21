@@ -1,12 +1,15 @@
 @import '../../../styles/settings.scss';
 
 .root {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem 0;
+  h1 {
+    text-align: center;
+  }
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
     .image_box {
       display: flex;
       justify-content: center;
@@ -31,4 +34,37 @@
   50% {opacity: 0.4;}
   75% {opacity: 0.75;}
   100% {opacity: 1;}
+}
+
+@media (min-device-width: 280px) and (max-device-width: 767px) {
+  .root {
+    .image_box {
+      img {
+        height: 23vh;
+        object-fit: cover;
+        margin-right: 5px;
+      }
+    }
+    p {
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .root {
+    h1 {
+      font-size: 4rem;
+    }
+    .image_box {
+      img {
+        height: 25vh;
+        object-fit: cover;
+        margin-right: 5px;
+      }
+    }
+    p {
+      margin: 2.5rem 0;
+    }
+  }
 }
