@@ -3,10 +3,13 @@ import { API_URL } from '../config';
 
 
 /* selectors */
+
+
 export const getOneItem = ({gallery}, id) => {
-  const chosenProduct = gallery.find(item => item.id === id);
+  const chosenProduct = gallery.find(item => item.id = id);
   return chosenProduct;
 };
+
   
   
 /* action name creator */

@@ -14,6 +14,17 @@ import Button from '../../common/Button/Button';
 import ImageSlider from '../../features/ImageSlider/ImageSlider';
 import MainPageGalleryItem from '../../features/MainPageGalleryItem/MainPageGalleryItem';
 
+function scrollDown () {
+
+  const height = window.innerHeight;
+
+  setTimeout(function() {
+    window.scrollTo({
+      top: height,
+      behavior: 'smooth',
+    });
+  }, 100);
+}
 
 class Component extends React.Component {
 
@@ -36,14 +47,14 @@ class Component extends React.Component {
           <div id="about" className={styles.side_content}>
             <h1>About us</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <Link to="/about"><Button className={styles.btn}/></Link>
+            <Link to="/about" onClick={scrollDown}><Button className={styles.btn}/></Link>
           </div>
         </section>
         <section className={styles.two} data-aos="fade-right">
           <div id="offer" className={styles.side_content}>
             <h1>Our offer</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <Link to="/offer"><Button className={styles.btn}/></Link>
+            <Link to="/offer" onClick={scrollDown}><Button className={styles.btn}/></Link>
           </div>
           <img src='https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg'></img>
         </section>
@@ -59,15 +70,15 @@ class Component extends React.Component {
         <section id="inspirations" className={styles.four} data-aos="fade-up">
           <h1>Inspirations</h1>
           <div className={styles.insp_boxes}>
-            <Link to="/places"><div className={cslx(styles.insp_box, styles.places)}>
+            <Link to="/places" onClick={scrollDown}><div className={cslx(styles.insp_box, styles.places)}>
               <span></span>
               <h2>Places</h2>
             </div></Link>
-            <Link to="/dresses"><div className={cslx(styles.insp_box, styles.dresses)}>
+            <Link to="/dresses" onClick={scrollDown}><div className={cslx(styles.insp_box, styles.dresses)}>
               <span></span>
               <h2>Dresses</h2>
             </div></Link>
-            <Link to="/decorations"><div className={cslx(styles.insp_box, styles.decorations)}>
+            <Link to="/decorations" onClick={scrollDown}><div className={cslx(styles.insp_box, styles.decorations)}>
               <span></span>
               <h2>Decorations</h2>
             </div></Link>

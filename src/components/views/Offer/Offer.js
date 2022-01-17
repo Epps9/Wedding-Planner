@@ -5,11 +5,12 @@ import AOS from 'aos';
 
 import styles from './Offer.module.scss';
 
+
 const Offer = ( ) => {
 
   useEffect(() => {
     AOS.init({
-      duration : 1500,
+      duration : 1800,
     });
   }, []);
 

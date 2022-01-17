@@ -10,9 +10,12 @@ import Footer from '../Footer/Footer';
 class MainLayout extends React.Component {
 
   componentDidMount () {
+
+    const height = window.innerHeight;
+
     setTimeout(function() {
       window.scrollTo({
-        top: 950,
+        top: height,
         behavior: 'smooth',
       });
     }, 2000); 

@@ -51,6 +51,7 @@ Component.propTypes = {
 };
 
 const mapStateToProps = (state, props) => {
+  console.log('id', props.match.params.id);
   return ({
     galleryItem: getOneItem(state, props.match.params.id),
   });
